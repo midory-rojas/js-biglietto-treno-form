@@ -45,11 +45,11 @@ form.addEventListener("submit", function(event) {
   const numeroCarrozza = Math.floor(Math.random() *10) + 1;
   const codiceCP = Math.floor(Math.random() * 90000) + 10000;
 
-  passengerName.textContent = nome;
-  offer.textContent = tipoSconto;
-  carrozza.textContent = numeroCarrozza;
-  codice.textContent = codiceCP;
-  price.textContent = prezzoBiglietto.toFixed(2) + `€`;
+  passengerName.innerHTML = nome;
+  offer.innerHTML = tipoSconto;
+  carrozza.innerHTML = numeroCarrozza;
+  codice.innerHTML = codiceCP;
+  price.innerHTML = prezzoBiglietto.toFixed(2) + `€`;
 
 });
 
