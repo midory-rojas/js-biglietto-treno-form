@@ -22,7 +22,7 @@ const prezzoPerKm = 0.21;
 form.addEventListener("submit", function(event) {
   event.preventDefault();
 
-  const nome = nameImput.value.trim();
+  const name = nameImput.value.trim();
   const km = parseFloat(kmImput.value);
   const fasciaEta = ageSelect.value;
   ticketSection.classList.remove("d-none");
@@ -34,10 +34,10 @@ form.addEventListener("submit", function(event) {
 
   if (fasciaEta === "minorenne") {
     prezzoBiglietto = prezzoBiglietto * 0.8;
-    tipoSconto = "Sconto Minorenni";
+    tipoSconto = "Sconto Minorenni - 20%";
   } else if (fasciaEta === "over65") {
     prezzoBiglietto = prezzoBiglietto * 0.6;
-    tipoSconto ="Sconto Over 65";
+    tipoSconto ="Sconto Over 65 - 40%";
   }
 
   // Numeri casuali per la carroza
@@ -45,7 +45,7 @@ form.addEventListener("submit", function(event) {
   const numeroCarrozza = Math.floor(Math.random() *10) + 1;
   const codiceCP = Math.floor(Math.random() * 90000) + 10000;
 
-  passengerName.innerHTML = nome;
+  passengerName.innerHTML = name;
   offer.innerHTML = tipoSconto;
   carrozza.innerHTML = numeroCarrozza;
   codice.innerHTML = codiceCP;
