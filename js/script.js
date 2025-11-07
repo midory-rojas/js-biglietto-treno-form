@@ -12,6 +12,7 @@ const codice = document.getElementById("codice");
 const price = document.getElementById("price");
 
 //Dati a disposizione
+
 // const scontoPerMenori = 20; // questa variabile RIMMARRA SEMPRE COSI
 // onst scontoPerOver = 40; // questa variabile RIMMARRA SEMPRE COSI
 const prezzoPerKm = 0.21; 
